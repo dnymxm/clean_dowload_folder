@@ -1,2 +1,4 @@
 env/
 package.json
+.DS_Store
+.vscode/settings.json
