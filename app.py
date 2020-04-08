@@ -30,14 +30,14 @@ extensions = {
     ]
 }
 
-# Get currents files in your download folder
+# Get currents files from your download folder
 files = glob(os.path.join(download_folder_path, "*"))
 
 for f in files:
-    # Get extention for each file
+    # Get extension for each file
     extension = os.path.splitext(f)[-1]
     for key, value in extensions.items():
-        # If extension is in one your list of extensions..
+        # If extension is in one of your list of extensions..
         if extension in value:
             # Join folder path
             extension_folder_path = os.path.join(home_path, key)
